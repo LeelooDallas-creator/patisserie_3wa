@@ -1,0 +1,143 @@
+/* styles/main.scss */
+
+/* 🌸 Style global */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* 🌟 Navigation (centrée et en ligne) */
+nav {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none; /* Supprime le soulignement */
+  color: #ff527b; /* Texte en rose par défaut */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  color: white;
+}
+
+/* 🎀 Boutons */
+button {
+  background: linear-gradient(135deg, #ff85a2, #ff5891);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff5e84, #ff3c6e);
+  box-shadow: 4px 4px 15px rgba(255, 105, 135, 0.5);
+}
+
+/* 🍰 Cartes des pâtisseries */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  color: #ff527b;nbk
+}
+
+li:hover {
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  transform: scale(1.05);
+  box-shadow: 2px 4px 12px rgba(255, 105, 135, 0.4);
+}
+
+/* 🏠 Styles spécifiques aux pages */
+.home,
+.play,
+.login,
+.contact,
+.patisseries {
+  text-align: center;
+  padding: 20px;
+}
+
+/* 📝 Formulaires */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* 🎲 Style des dés dans la page de jeu */
+.dice-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dice {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.dice:hover {
+  transform: rotate(10deg) scale(1.1);
+  box-shadow: 2px 2px 15px rgba(255, 105, 135, 0.5);
+}
